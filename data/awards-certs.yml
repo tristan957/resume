@@ -1,0 +1,15 @@
+# SPDX-License-Identifier: CC-BY-SA-4.0
+#
+# SPDX-FileCopyrightText: 2023 Tristan Partin <tristan@partin.io>
+
+- name: Apache Cassandra 3.x Developer Associate
+  organization:
+    name: DataStax
+    url: https://www.datastax.com/
+  year: 2020
+
+- name: Eagle Scout Award
+  organization:
+    name: Boy Scouts of America
+    url: https://www.scouting.org/
+  year: 2014

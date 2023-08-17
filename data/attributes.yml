@@ -1,0 +1,27 @@
+# SPDX-License-Identifier: CC-BY-SA-4.0
+#
+# SPDX-FileCopyrightText: 2023 Tristan Partin <tristan@partin.io>
+
+- content: tristan@partin.io
+  fa-name: at
+  uri: mailto:tristan@partin.io
+
+- content: +1 281-300-9395
+  fa-name: phone
+  uri: tel:+12813009395
+
+- content: Austin, Texas
+  fa-name: location-dot
+  uri: null
+
+- content: tristan.partin.io
+  fa-name: rss
+  uri: https://tristan.partin.io
+
+- content: /in/tristan-partin
+  fa-name: linkedin-in
+  uri: https://www.linkedin.com/in/tristan-partin
+
+- content: tristan957
+  fa-name: github
+  uri: https://github.com/tristan957

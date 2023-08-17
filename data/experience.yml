@@ -1,0 +1,161 @@
+# SPDX-License-Identifier: CC-BY-SA-4.0
+#
+# SPDX-FileCopyrightText: 2023 Tristan Partin <tristan@partin.io>
+
+- title: Software Engineer (Postgres Hacker)
+  company:
+    name: Neon
+    url: https://neon.tech
+  style: remote
+  location:
+    city: Austin
+    state: Texas
+    country: USA
+  timeline:
+    start:
+      month: May
+      year: 2023
+    end: null
+  descriptors:
+    - >
+      Participating in upstream Postgres development.
+    - >
+      Migrating Postgres from a multi-process model to a multi-threaded model.
+    - >
+      Scaffolding out the final pieces of the Postgres Meson build.
+    - >
+      Adding support to Neon for new Postgres releases.
+
+- title: Staff Software Engineer
+  company:
+    name: Micron Technology
+    url: https://www.micron.com
+  style: hybrid
+  location:
+    city: Austin
+    state: Texas
+    country: USA
+  timeline:
+    start:
+      month: August
+      year: 2020
+    end:
+      month: February
+      year: 2023
+  descriptors:
+    - >
+      Maintained the Heterogeneous-Memory Storage Engine (HSE)
+    - >
+      Integrated HSE with MongoDB v3.4 as an alternative to WiredTiger
+    - >
+      Benchmarked HSE against popular storage engines like RocksDB and
+      WiredTiger and found improvements in various workloads
+    - >
+      Designed Python and Java language bindings to wrap the HSE C API
+    - >
+      Co-authored a patent filing for a new on-media data structure
+
+- title: Software Developer
+  company:
+    name: Expero
+    url: https://www.experoinc.com
+  location:
+    city: West Lake Hills
+    state: Texas
+    country: USA
+  timeline:
+    start:
+      month: July
+      year: 2019
+    end:
+      month: August
+      year: 2020
+  descriptors:
+    - >
+      Abstracted a collection of Java/TypeScript/Node.js microservices to be
+      able to use both DataStax Enterprise and open source equivalents like
+      JanusGraph, Cassandra, and Elasticsearch
+    - >
+      Developed a graph database benchmarking suite using CosmosDB, TigerGraph,
+      DataStax Enterprise, and Neo4j
+    - >
+      Migrated data from a legacy FileMaker system to AWS RDS
+
+- title: Software Development Intern
+  company:
+    name: Expero
+    url: https://www.experoinc.com
+  location:
+    city: College Station
+    state: Texas
+    country: USA
+  timeline:
+    start:
+      month: September
+      year: 2017
+    end:
+      month: May
+      year: 2019
+  descriptors:
+    - >
+      Designed a graph database modeling course curriculum
+    - >
+      Developed a daily time reporting tool for company leads to track developer
+      time charges using AWS Lambda and Go
+    - >
+      Created a microservice using AWS S3 and Java that performs dynamic PDF
+      generation
+    - >
+      Built a proof of concept ASP.NET Core application using Microsoft's
+      CosmosDB Gremlin API
+
+- title: Software Engineering Intern
+  company:
+    name: NI (National Instruments)
+    url: https://ni.com
+  location:
+    city: Austin
+    state: Texas
+    country: USA
+  timeline:
+    start:
+      month: May
+      year: 2018
+    end:
+      month: August
+      year: 2018
+  descriptors:
+    - >
+      Worked as a driver developer on the XNET team, which develops solutions
+      for automotive testing
+    - >
+      Implemented time synchronization between data acquisition modules in order
+      to better correlate collected data using C++ in both the Windows kernel
+      and userspace drivers
+
+- title: Software Engineering Intern
+  hidden: true
+  company:
+    name: Booz Allen Hamilton
+    url: https://boozallen.com
+  location:
+    city: Houston
+    state: Texas
+    country: USA
+  timeline:
+    start:
+      month: May
+      year: 2017
+    end:
+      month: August
+      year: 2017
+  descriptors:
+    - >
+      Worked under the NASA Mission and Program Integration contract
+    - >
+      Imported a SharePoint table of all payloads/systems, hardware
+      configurations, protrusions and overlaps aboard the International Space
+      Station to MariaDB and SQL
+    - >
+      Developed a desktop application in Python for managing the aforementioned
+      information

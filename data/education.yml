@@ -1,0 +1,17 @@
+# SPDX-License-Identifier: CC-BY-SA-4.0
+#
+# SPDX-FileCopyrightText: 2023 Tristan Partin <tristan@partin.io>
+
+- degree:
+    level: Bachelor of Science
+    focus: Computer Engineering
+  school:
+    name: Texas A&M University
+    url: https://tamu.edu
+    location:
+      city: College Station
+      state: Texas
+      country: USA
+  graduation-date:
+    month: May
+    year: 2019

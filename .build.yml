@@ -1,0 +1,36 @@
+# SPDX-License-Identifier: CC0-1.0
+#
+# SPDX-FileCopyrightText: 2023 Tristan Partin <tristan@partin.io>
+
+image: alpine/edge
+packages:
+  - make
+  - reuse
+  - shellcheck
+  - shfmt
+  - typst
+  - yarn
+sources:
+  - https://git.sr.ht/~tristan957/resume
+tasks:
+  - reuse: |
+      cd resume
+      reuse lint
+  - shellcheck: |
+      cd resume
+      ./scripts/shellcheck.sh
+  - shfmt: |
+      cd resume
+      ./scripts/shfmt.sh
+  - yarn: |
+      cd resume
+      yarn
+  - markdownlint: |
+      cd resume
+      yarn run markdownlint:check
+  - prettier: |
+      cd resume
+      yarn run prettier:check
+  - build: |
+      cd resume
+      make

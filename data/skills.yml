@@ -1,0 +1,16 @@
+# SPDX-License-Identifier: CC-BY-SA-4.0
+#
+# SPDX-FileCopyrightText: 2023 Tristan Partin <tristan@partin.io>
+
+- name: C
+- name: C++
+- name: Go
+- name: Python
+- name: Java
+- name: Linux
+- name: Git
+- name: Build Sytems
+- name: Databases
+- name: Storage Engines
+- name: Systems Software
+- name: Open Source

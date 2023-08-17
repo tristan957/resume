@@ -1,0 +1,33 @@
+# SPDX-License-Identifier: CC-BY-SA-4.0
+#
+# SPDX-FileCopyrightText: 2023 Tristan Partin <tristan@partin.io>
+
+- name: Heterogeneous-Memory Storage Engine
+  url: https://github.com/hse-project/hse
+  descriptors:
+    - >
+      A fast embeddable key-value store designed for SSDs and persistent memory,
+      optimizing performance and endurance by orchestrating data placement
+      across DRAM and multiple classes of solid-state storage
+    - >
+      Overcomes HDD-based architectures to improve throughput up to 6 times,
+      latency up to 11 times and SSD endurance by 7 times when compared to
+      Meta's RocksDB
+
+- name: HSE Python Bindings
+  url: https://github.com/hse-project/hse-python
+  descriptors:
+    - >
+      Python language bindings for the HSE C API
+
+- name: HSE Java Bindings
+  url: https://github.com/hse-project/hse-java
+  descriptors:
+    - >
+      Java language bindings for the HSE C API
+
+- name: Various Open-Source Contributions
+  descriptors:
+    - >
+      Includes organizations and technologies like Meson, GNOME, Electron,
+      Terraform, etc.

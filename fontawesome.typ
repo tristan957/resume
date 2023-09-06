@@ -3,7 +3,7 @@
  * SPDX-FileCopyrightText: 2023 Tristan Partin <tristan@partin.io>
  */
 
-#let fa-paths = (
+#let paths = (
   at: "fonts/fontawesome/svgs/solid/at.svg",
   calendar: "fonts/fontawesome/svgs/regular/calendar.svg",
   github: "fonts/fontawesome/svgs/brands/github.svg",
@@ -15,14 +15,14 @@
   trophy: "fonts/fontawesome/svgs/solid/trophy.svg",
 )
 
-#let fa-icon(height: .75em, baseline: 0em, name) = box(
+#let icon(height: .75em, baseline: 0em, name) = box(
   height: height,
   baseline: baseline,
-  image(fa-paths.at(name)),
+  image(paths.at(name)),
 )
 
-#let fa-attach(height: 0.75em, baseline: 0em, padding: 0.15em, name, content) = [
-  #fa-icon(name, height: height, baseline: baseline)
+#let attach(height: 0.75em, baseline: 0em, padding: 0.15em, name, content) = [
+  #icon(name, height: height, baseline: baseline)
   #h(padding)
   #content
 ]

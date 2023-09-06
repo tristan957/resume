@@ -4,7 +4,7 @@
  */
 
 #import "common.typ": section, separator, title
-#import "../fontawesome.typ": fa-attach
+#import "../fontawesome.typ" as fa
 #import "../style.typ"
 
 #let data = yaml("../data/awards-certs.yml")
@@ -15,10 +15,10 @@
   stack(
     dir: ltr,
     spacing: 1fr,
-    fa-attach("trophy")[
+    fa.attach("trophy")[
       #style.accent(link(ac.organization.url, ac.organization.name))
     ],
-    fa-attach("calendar")[#ac.year]
+    fa.attach("calendar")[#ac.year]
   ),
 )
 

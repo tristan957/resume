@@ -3,7 +3,7 @@
  * SPDX-FileCopyrightText: 2023 Tristan Partin <tristan@partin.io>
  */
 
-#import "../fontawesome.typ": fa-icon, fa-attach
+#import "../fontawesome.typ" as fa
 
 #import "../style.typ"
 #import "common.typ": section, separator, subtitle, title
@@ -11,7 +11,7 @@
 #let data = yaml("../data/experience.yml")
 
 #let experience(e) = [
-  #let timeline(timeline) = fa-attach(
+  #let timeline(timeline) = fa.attach(
     "calendar"
   )[
     #if timeline.end != none [
@@ -21,7 +21,7 @@
     ]
   ]
 
-  #let location(location, style: none) = fa-attach("location-dot")[
+  #let location(location, style: none) = fa.attach("location-dot")[
     #location.city, #location.state
     #if style != none [
       (#style)

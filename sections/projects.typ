@@ -3,7 +3,7 @@
  * SPDX-FileCopyrightText: 2023 Tristan Partin <tristan@partin.io>
  */
 
-#import "../fontawesome.typ": fa-attach
+#import "../fontawesome.typ" as fa
 #import "../style.typ"
 #import "common.typ": section, separator, subtitle, title
 
@@ -27,7 +27,7 @@
   if project.at("url", default: none) != none {
     let (host, slug) = parse-url(project.url)
 
-    content.push(fa-attach(host-to-icon.at(host))[
+    content.push(fa.attach(host-to-icon.at(host))[
       #style.accent(link(project.url, slug))
     ])
   }

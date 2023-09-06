@@ -15,9 +15,9 @@
     "calendar"
   )[
     #if timeline.end != none [
-      #timeline.start.month #timeline.start.year - #timeline.end.month #timeline.end.year
+      #timeline.start.month #timeline.start.year -- #timeline.end.month #timeline.end.year
     ] else [
-      #timeline.start.month #timeline.start.year - Present
+      #timeline.start.month #timeline.start.year -- Present
     ]
   ]
 

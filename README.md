@@ -15,7 +15,7 @@ SPDX-FileCopyrightText: 2023 Tristan Partin <tristan@partin.io>
 
 This is my resume written in [Typst](https://typst.app). A compiled PDF is
 hosted on my
-[personal website](https://tristan.partin.io/documents/Tristan_Partin_Resume.pdf)
+[personal website](https://tristan.partin.io/documents/Tristan_Partin_Resume.pdf).
 
 ## Building
 

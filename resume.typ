@@ -11,12 +11,12 @@
 #import "sections/skills.typ"
 #import "style.typ"
 
-#let me = yaml("data/me.yml")
+#let doc = yaml("data/document.yml")
 
 #set document(
-  title: "Tristan Partin's Resume",
-  author: "Tristan Partin",
-  keywords: me.keywords,
+  title: doc.title,
+  author: doc.author,
+  keywords: doc.keywords,
 )
 
 #set page(
@@ -34,7 +34,7 @@
 
 #stack(
   spacing: 10pt,
-  heading[#text(size: 17pt)[#upper[#me.name]]],
+  heading[#text(size: 17pt)[#upper[#doc.author]]],
   text(size: style.TITLE_TEXT_SIZE)[
     #style.accent[
       #link(<recent-experience>)[

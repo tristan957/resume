@@ -11,9 +11,12 @@
 #import "sections/skills.typ"
 #import "style.typ"
 
+#let me = yaml("data/me.yml")
+
 #set document(
   title: "Tristan Partin's Resume",
   author: "Tristan Partin",
+  keywords: me.keywords,
 )
 
 #set page(
@@ -28,8 +31,6 @@
   size: style.DEFAULT_TEXT_SIZE,
   font: "Cantarell",
 )
-
-#let me = yaml("data/me.yml")
 
 #stack(
   spacing: 10pt,

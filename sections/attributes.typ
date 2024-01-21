@@ -8,11 +8,11 @@
 
 #let data = yaml("../data/attributes.yml")
 
-#let attribute(attribute) = fa.attach(attribute.fa-name)[
-  #if attribute.at("uri", default: none) != none [
-    #link(attribute.uri, text(size: style.SMALL_TEXT_SIZE, attribute.content))
+#let attribute(a) = fa.attach(a.fa-name)[
+  #if a.at("uri", default: none) != none [
+    #link(a.uri, text(size: style.SMALL_TEXT_SIZE, a.content))
   ] else [
-    #text(size: style.SMALL_TEXT_SIZE, attribute.content)
+    #text(size: style.SMALL_TEXT_SIZE, a.content)
   ]
 ]
 

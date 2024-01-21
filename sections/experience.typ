@@ -4,25 +4,24 @@
  */
 
 #import "../fontawesome.typ" as fa
-
 #import "../style.typ"
 #import "common.typ": section, separator, subtitle, title
 
 #let data = yaml("../data/experience.yml")
 
 #let experience(e) = [
-  #let timeline(timeline) = fa.attach(
+  #let timeline(t) = fa.attach(
     "calendar"
   )[
-    #if timeline.end != none [
-      #timeline.start.month #timeline.start.year -- #timeline.end.month #timeline.end.year
+    #if t.end != none [
+      #t.start.month #t.start.year -- #t.end.month #t.end.year
     ] else [
-      #timeline.start.month #timeline.start.year -- Present
+      #t.start.month #t.start.year -- Present
     ]
   ]
 
-  #let location(location, style: none) = fa.attach("location-dot")[
-    #location.city, #location.state
+  #let location(l, style: none) = fa.attach("location-dot")[
+    #l.city, #l.state
     #if style != none [
       (#style)
     ]

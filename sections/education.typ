@@ -9,22 +9,22 @@
 
 #let data = yaml("../data/education.yml")
 
-#let education(education) = stack(
+#let education(e) = stack(
   spacing: style.SPACING,
   title([
-    #education.degree.level \
-    #education.degree.focus
+    #e.degree.level \
+    #e.degree.focus
   ]),
-  subtitle(link(education.school.url, education.school.name)),
+  subtitle(link(e.school.url, e.school.name)),
   text(size: style.SMALL_TEXT_SIZE)[
     #stack(
       dir: ltr,
       spacing: 1fr,
       fa.attach("graduation-cap")[
-        #education.graduation-date.month #education.graduation-date.year
+        #e.graduation-date.month #e.graduation-date.year
       ],
       fa.attach("location-dot")[
-        #education.school.location.city, #education.school.location.state
+        #e.school.location.city, #e.school.location.state
       ],
     )
   ],

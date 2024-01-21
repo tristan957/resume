@@ -19,20 +19,20 @@
   return (components.at(0), components.slice(1).join("/"))
 }
 
-#let project(project) = {
+#let project(p) = {
   let content = ()
 
-  content.push(title(project.name))
+  content.push(title(p.name))
 
-  if project.at("url", default: none) != none {
-    let (host, slug) = parse-url(project.url)
+  if p.at("url", default: none) != none {
+    let (host, slug) = parse-url(p.url)
 
     content.push(fa.attach(host-to-icon.at(host))[
-      #style.accent(link(project.url, slug))
+      #style.accent(link(p.url, slug))
     ])
   }
 
-  content.push(list(tight: true, ..project.descriptors))
+  content.push(list(tight: true, ..p.descriptors))
 
   stack(
     spacing: style.SPACING,

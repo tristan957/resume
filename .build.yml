@@ -4,6 +4,7 @@
 
 image: alpine/edge
 packages:
+  - curl
   - make
   - reuse
   - shellcheck

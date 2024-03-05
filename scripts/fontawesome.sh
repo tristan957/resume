@@ -4,7 +4,7 @@
 #
 # SPDX-FileCopyrightText: 2023 Tristan Partin <tristan@partin.io>
 
-FONTAWESOME_VERSION="6.4.2"
+FONTAWESOME_VERSION="6.5.1"
 
 if [ ! -d fonts/fontawesome ]; then
 	mkdir -p fonts

@@ -5,32 +5,31 @@
 
 #let icons = (
   at: (
-    location: "fonts/fontawesome/svgs/solid/at.svg",
+    path: "fonts/fontawesome/svgs/solid/at.svg",
   ),
   calendar: (
-    location: "fonts/fontawesome/svgs/regular/calendar.svg",
+    path: "fonts/fontawesome/svgs/regular/calendar.svg",
   ),
   github: (
-    location: "fonts/fontawesome/svgs/brands/github.svg",
+    path: "fonts/fontawesome/svgs/brands/github.svg",
   ),
   graduation-cap: (
-    location: "fonts/fontawesome/svgs/solid/graduation-cap.svg",
+    path: "fonts/fontawesome/svgs/solid/graduation-cap.svg",
   ),
   linkedin-in: (
-    location: "fonts/fontawesome/svgs/brands/linkedin-in.svg",
-    baseline: 0.115em,
+    path: "fonts/fontawesome/svgs/brands/linkedin-in.svg",
   ),
   location-dot: (
-    location: "fonts/fontawesome/svgs/solid/location-dot.svg",
+    path: "fonts/fontawesome/svgs/solid/location-dot.svg",
   ),
   phone: (
-    location: "fonts/fontawesome/svgs/solid/phone.svg",
+    path: "fonts/fontawesome/svgs/solid/phone.svg",
   ),
   rss: (
-    location: "fonts/fontawesome/svgs/solid/rss.svg",
+    path: "fonts/fontawesome/svgs/solid/rss.svg",
   ),
   trophy: (
-    location: "fonts/fontawesome/svgs/solid/trophy.svg",
+    path: "fonts/fontawesome/svgs/solid/trophy.svg",
   ),
 )
 
@@ -40,7 +39,7 @@
   box(
     height: height,
     baseline: i.at("baseline", default: 0em),
-    image(i.location),
+    image(i.path),
   )
 }
 

@@ -18,13 +18,12 @@
     end: null
   descriptors:
     - >
-      Participating in upstream Postgres development.
+      Participating in upstream Postgres development through patch submissions,
+      code reviews, and design discussions on the mailing list
     - >
-      Migrating Postgres from a multi-process model to a multi-threaded model.
+      Developing the path for Postgres upgrades within Neon
     - >
-      Scaffolding out the final pieces of the Postgres Meson build.
-    - >
-      Adding support to Neon for new Postgres releases.
+      Rebasing Neon on new Postgres releases
 
 - title: Staff Software Engineer
   company:

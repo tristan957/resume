@@ -4,6 +4,7 @@
 
 - name: C
 - name: C++
+- name: Rust
 - name: Go
 - name: Python
 - name: Java

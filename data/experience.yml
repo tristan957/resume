@@ -23,7 +23,9 @@
     - >
       Developing the path for Postgres upgrades within Neon
     - >
-      Rebasing Neon on new Postgres releases
+      Scaffolding out the final pieces of the Postgres Meson build
+    - >
+      Adding support to Neon for new Postgres releases
 
 - title: Staff Software Engineer
   company:

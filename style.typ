@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-3.0-or-later
  *
- * SPDX-FileCopyrightText: 2023 Tristan Partin <tristan@partin.io>
+ * SPDX-FileCopyrightText: Tristan Partin <tristan@partin.io>
  */
 
 #let ACCENT = cmyk(0%, 100%, 100%, 69%)

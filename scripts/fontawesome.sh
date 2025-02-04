@@ -2,7 +2,7 @@
 
 # SPDX-License-Identifier: CC0-1.0
 #
-# SPDX-FileCopyrightText: 2023 Tristan Partin <tristan@partin.io>
+# SPDX-FileCopyrightText: Tristan Partin <tristan@partin.io>
 
 FONTAWESOME_VERSION="6.5.1"
 

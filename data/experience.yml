@@ -21,11 +21,17 @@
       Participating in upstream Postgres development through patch submissions,
       code reviews, and design discussions on the mailing list
     - >
-      Developing the path for Postgres upgrades within Neon
+      Communicating with customers and partners to enable extensions and
+      Postgres features on the Neon platform
     - >
-      Scaffolding out the final pieces of the Postgres Meson build
+      Improving observability within compute components to understand
+      performance and usage characteristics
     - >
-      Adding support to Neon for new Postgres releases
+      Implmenting authorized communication between the control plane and
+      computes to assist in platform security
+    - >
+      Responding to and root-causing incidents and support escalations as a part
+      of the on-call rotation
 
 - title: Staff Software Engineer
   company:
@@ -52,22 +58,27 @@
       Benchmarked HSE against popular storage engines like RocksDB and
       WiredTiger and found improvements in various workloads
     - >
+      Improved observability of HSE by exposing operations over an HTTP server
+      bound to a UNIX domain socket
+    - >
+      Rewrote the build system to improve build and test times over 50%
+    - >
       Designed Python and Java language bindings to wrap the HSE C API
     - >
-      Co-authored a patent filing for a new on-media data structure
+      Co-authored a patent for a log structured merge tree implementation
 
 - title: Software Developer
   company:
     name: Expero
     url: https://www.experoinc.com
   location:
-    city: West Lake Hills
+    city: West Lake Hills / College Station
     state: Texas
     country: USA
   timeline:
     start:
-      month: July
-      year: 2019
+      month: September
+      year: 2017
     end:
       month: August
       year: 2020
@@ -80,35 +91,12 @@
       Developed a graph database benchmarking suite using CosmosDB, TigerGraph,
       DataStax Enterprise, and Neo4j
     - >
-      Migrated data from a legacy FileMaker system to AWS RDS
-
-- title: Software Development Intern
-  company:
-    name: Expero
-    url: https://www.experoinc.com
-  location:
-    city: College Station
-    state: Texas
-    country: USA
-  timeline:
-    start:
-      month: September
-      year: 2017
-    end:
-      month: May
-      year: 2019
-  descriptors:
+      Migrated legacy customer systems to modern technologies
     - >
       Designed a graph database modeling course curriculum
     - >
-      Developed a daily time reporting tool for company leads to track developer
-      time charges using AWS Lambda and Go
-    - >
-      Created a microservice using AWS S3 and Java that performs dynamic PDF
-      generation
-    - >
-      Built a proof of concept ASP.NET Core application using Microsoft's
-      CosmosDB Gremlin API
+      Created backend web services for which interacted with graph and no-SQL
+      databases and cloud technologies on AWS and Azure
 
 - title: Software Engineering Intern
   company:

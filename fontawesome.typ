@@ -10,11 +10,17 @@
   calendar: (
     path: "fonts/fontawesome/svgs/regular/calendar.svg",
   ),
+  file: (
+    path: "fonts/fontawesome/svgs/solid/file.svg",
+  ),
   github: (
     path: "fonts/fontawesome/svgs/brands/github.svg",
   ),
   graduation-cap: (
     path: "fonts/fontawesome/svgs/solid/graduation-cap.svg",
+  ),
+  hashtag: (
+    path: "fonts/fontawesome/svgs/solid/hashtag.svg",
   ),
   linkedin-in: (
     path: "fonts/fontawesome/svgs/brands/linkedin-in.svg",

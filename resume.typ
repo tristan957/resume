@@ -4,7 +4,7 @@
  */
 
 #import "sections/attributes.typ"
-#import "sections/awards-certs.typ"
+#import "sections/awards.typ"
 #import "sections/education.typ"
 #import "sections/experience.typ"
 #import "sections/projects.typ"
@@ -53,7 +53,7 @@
       #education.content
       #skills.content
       #projects.content
-      #awards-certs.content
+      #awards.content
     ],
   ),
 )

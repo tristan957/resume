@@ -8,7 +8,7 @@
 #let SECTION_TEXT_SIZE = 14pt
 #let TITLE_TEXT_SIZE = 11pt
 #let SUBTITLE_TEXT_SIZE = 10.5pt
-#let DEFAULT_TEXT_SIZE = 9.675pt
+#let DEFAULT_TEXT_SIZE = 9.75pt
 #let SMALL_TEXT_SIZE = 8.5pt
 
 #let MARGIN = 1cm

@@ -20,7 +20,7 @@
         fa.attach("file")[
           #style.accent(link(a.organization.url, a.organization.name))
         ],
-        fa.attach("hashtag")[#link(a.patent.url, a.patent.number)]
+        fa.attach("hashtag")[#link(a.patent.url, a.patent.number)],
       ),
     )
   } else {
@@ -33,7 +33,7 @@
         fa.attach("trophy")[
           #style.accent(link(a.organization.url, a.organization.name))
         ],
-        fa.attach("calendar")[#a.year]
+        fa.attach("calendar")[#a.year],
       ),
     )
   }

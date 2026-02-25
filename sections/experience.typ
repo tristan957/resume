@@ -11,7 +11,7 @@
 
 #let experience(e) = [
   #let timeline(t) = fa.attach(
-    "calendar"
+    "calendar",
   )[
     #if t.end != none [
       #t.start.month #t.start.year -- #t.end.month #t.end.year

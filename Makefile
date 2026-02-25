@@ -11,6 +11,14 @@ $(RESUME): *.typ data/*.yml sections/*.typ
 	@$(MAKE) -s fontawesome
 	typst compile resume.typ $(RESUME)
 
+.PHONY: format
+format:
+	typstyle --inplace .
+
+.PHONY: format-check
+format-check:
+	typstyle --diff .
+
 .PHONY: resume
 resume: $(RESUME)
 

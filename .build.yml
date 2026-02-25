@@ -10,6 +10,7 @@ packages:
   - shellcheck
   - shfmt
   - typst
+  - typstyle
   - yarn
 sources:
   - https://git.sr.ht/~tristan957/resume
@@ -23,6 +24,9 @@ tasks:
   - shfmt: |
       cd resume
       ./scripts/shfmt.sh
+  - typststyle: |
+      cd resume
+      typstyle --diff .
   - yarn: |
       cd resume
       yarn

@@ -20,11 +20,11 @@
 )
 
 #set page(
-    /* A4 generally works better since it gives me more vertical space to work
-     * with but alas, the world is 8.5in x 11in.
-     */
-    paper: "us-letter",
-    margin: (x: style.MARGIN, y: style.MARGIN),
+  /* A4 generally works better since it gives me more vertical space to work
+   * with but alas, the world is 8.5in x 11in.
+   */
+  paper: "us-letter",
+  margin: (x: style.MARGIN, y: style.MARGIN),
 )
 
 #set text(

@@ -10,7 +10,7 @@
 #let skill(skill) = box(
   stroke: (
     paint: cmyk(0%, 0%, 0%, 16%),
-    thickness: 0.75pt
+    thickness: 0.75pt,
   ),
   inset: 4pt,
   radius: 3pt,

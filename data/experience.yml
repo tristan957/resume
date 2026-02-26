@@ -65,7 +65,7 @@
       Improved observability of HSE by exposing operations over an HTTP server
       bound to a UNIX domain socket
     - >
-      Rewrote the build system to improve build and test times over 50%
+      Rewrote the build system to improve build and test times by over 50%
     - >
       Designed Python and Java language bindings to wrap the HSE C API
     - >
@@ -99,10 +99,11 @@
     - >
       Designed a graph database modeling course curriculum
     - >
-      Created backend web services for which interacted with graph and no-SQL
+      Created backend web services that interacted with graph and NoSQL
       databases and cloud technologies on AWS and Azure
 
 - title: Software Engineering Intern
+  hidden: true
   company:
     name: NI (National Instruments)
     url: https://ni.com

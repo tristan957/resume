@@ -17,7 +17,9 @@
     start:
       month: May
       year: 2023
-    end: null
+    end:
+      month: June
+      year: 2025
   descriptors:
     - >
       Participating in upstream Postgres development through patch submissions,

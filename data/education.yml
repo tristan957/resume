@@ -2,6 +2,8 @@
 #
 # SPDX-FileCopyrightText: 2023 Tristan Partin <tristan@partin.io>
 
+# yaml-language-server: $schema=../schemas/education.json
+
 - degree:
     level: Bachelor of Science
     focus: Computer Engineering

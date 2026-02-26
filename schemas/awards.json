@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "$id": "awards.json",
+  "title": "Awards",
+  "description": "Awards and patents listed on the resume",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["name", "type", "organization", "year"],
+    "additionalProperties": false,
+    "properties": {
+      "name": {
+        "type": "string",
+        "description": "Name of the award or patent"
+      },
+      "type": {
+        "type": "string",
+        "enum": ["award", "patent"],
+        "description": "Category of the entry"
+      },
+      "hidden": {
+        "type": "boolean",
+        "description": "When true, the entry is omitted from the rendered resume",
+        "default": false
+      },
+      "organization": {
+        "type": "object",
+        "required": ["name", "url"],
+        "additionalProperties": false,
+        "description": "Granting organization",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Name of the organization"
+          },
+          "url": {
+            "type": "string",
+            "format": "uri",
+            "description": "URL of the organization's website"
+          }
+        }
+      },
+      "patent": {
+        "type": "object",
+        "required": ["number", "url"],
+        "additionalProperties": false,
+        "description": "Patent-specific details; only present when type is 'patent'",
+        "properties": {
+          "number": {
+            "type": "string",
+            "description": "Patent number"
+          },
+          "url": {
+            "type": "string",
+            "format": "uri",
+            "description": "URL to the patent record"
+          }
+        }
+      },
+      "year": {
+        "type": "integer",
+        "description": "Year the award or patent was granted",
+        "minimum": 1900
+      }
+    },
+    "if": {
+      "properties": {
+        "type": { "const": "patent" }
+      }
+    },
+    "then": {
+      "required": ["patent"]
+    }
+  }
+}

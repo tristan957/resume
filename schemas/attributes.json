@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "$id": "attributes.json",
+  "title": "Attributes",
+  "description": "Contact and social profile attributes displayed in the resume header",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["content", "fa-name", "uri"],
+    "additionalProperties": false,
+    "properties": {
+      "content": {
+        "type": "string",
+        "description": "Human-readable display text for the attribute"
+      },
+      "fa-name": {
+        "type": "string",
+        "description": "Font Awesome icon name (without the 'fa-' prefix)"
+      },
+      "uri": {
+        "type": ["string", "null"],
+        "description": "URI that the attribute links to, or null if not linkable"
+      }
+    }
+  }
+}

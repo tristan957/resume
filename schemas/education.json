@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "$id": "education.json",
+  "title": "Education",
+  "description": "Educational history listed on the resume",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["degree", "school", "graduation-date"],
+    "additionalProperties": false,
+    "properties": {
+      "degree": {
+        "type": "object",
+        "required": ["level", "focus"],
+        "additionalProperties": false,
+        "description": "Degree earned",
+        "properties": {
+          "level": {
+            "type": "string",
+            "description": "Degree level (e.g. 'Bachelor of Science')"
+          },
+          "focus": {
+            "type": "string",
+            "description": "Major or field of study"
+          }
+        }
+      },
+      "school": {
+        "type": "object",
+        "required": ["name", "url", "location"],
+        "additionalProperties": false,
+        "description": "Institution where the degree was earned",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Name of the institution"
+          },
+          "url": {
+            "type": "string",
+            "format": "uri",
+            "description": "URL of the institution's website"
+          },
+          "location": {
+            "type": "object",
+            "required": ["city", "state", "country"],
+            "additionalProperties": false,
+            "description": "Physical location of the institution",
+            "properties": {
+              "city": {
+                "type": "string",
+                "description": "City"
+              },
+              "state": {
+                "type": "string",
+                "description": "State or province"
+              },
+              "country": {
+                "type": "string",
+                "description": "Country"
+              }
+            }
+          }
+        }
+      },
+      "graduation-date": {
+        "type": "object",
+        "required": ["month", "year"],
+        "additionalProperties": false,
+        "description": "Month and year of graduation",
+        "properties": {
+          "month": {
+            "type": "string",
+            "description": "Month of graduation (full name, e.g. 'May')"
+          },
+          "year": {
+            "type": "integer",
+            "description": "Year of graduation",
+            "minimum": 1900
+          }
+        }
+      }
+    }
+  }
+}

@@ -2,6 +2,8 @@
 #
 # SPDX-FileCopyrightText: 2023 Tristan Partin <tristan@partin.io>
 
+# yaml-language-server: $schema=../schemas/document.json
+
 author: Tristan Partin
 title: Tristan Partin's Resume
 keywords:

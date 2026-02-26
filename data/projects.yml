@@ -2,6 +2,8 @@
 #
 # SPDX-FileCopyrightText: 2023 Tristan Partin <tristan@partin.io>
 
+# yaml-language-server: $schema=../schemas/projects.json
+
 - name: Heterogeneous-Memory Storage Engine
   url: https://github.com/hse-project/hse
   descriptors:

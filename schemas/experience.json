@@ -1,0 +1,115 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "$id": "experience.json",
+  "title": "Experience",
+  "description": "Work experience entries listed on the resume",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["title", "company", "location", "timeline", "descriptors"],
+    "additionalProperties": false,
+    "properties": {
+      "title": {
+        "type": "string",
+        "description": "Job title held"
+      },
+      "hidden": {
+        "type": "boolean",
+        "description": "When true, the entry is omitted from the rendered resume",
+        "default": false
+      },
+      "company": {
+        "type": "object",
+        "required": ["name", "url"],
+        "additionalProperties": false,
+        "description": "Employer",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Name of the company"
+          },
+          "url": {
+            "type": "string",
+            "format": "uri",
+            "description": "URL of the company's website"
+          }
+        }
+      },
+      "style": {
+        "type": "string",
+        "enum": ["remote", "hybrid", "onsite"],
+        "description": "Work arrangement style"
+      },
+      "location": {
+        "type": "object",
+        "required": ["city", "state", "country"],
+        "additionalProperties": false,
+        "description": "Physical location of the position",
+        "properties": {
+          "city": {
+            "type": "string",
+            "description": "City (may be a combined value such as 'City A / City B')"
+          },
+          "state": {
+            "type": "string",
+            "description": "State or province"
+          },
+          "country": {
+            "type": "string",
+            "description": "Country"
+          }
+        }
+      },
+      "timeline": {
+        "type": "object",
+        "required": ["start", "end"],
+        "additionalProperties": false,
+        "description": "Employment period",
+        "properties": {
+          "start": {
+            "type": "object",
+            "required": ["month", "year"],
+            "additionalProperties": false,
+            "description": "Start of the employment period",
+            "properties": {
+              "month": {
+                "type": "string",
+                "description": "Month employment began (full name, e.g. 'May')"
+              },
+              "year": {
+                "type": "integer",
+                "description": "Year employment began",
+                "minimum": 1900
+              }
+            }
+          },
+          "end": {
+            "type": "object",
+            "required": ["month", "year"],
+            "additionalProperties": false,
+            "description": "End of the employment period",
+            "properties": {
+              "month": {
+                "type": "string",
+                "description": "Month employment ended (full name, e.g. 'June')"
+              },
+              "year": {
+                "type": "integer",
+                "description": "Year employment ended",
+                "minimum": 1900
+              }
+            }
+          }
+        }
+      },
+      "descriptors": {
+        "type": "array",
+        "description": "Bullet-point descriptions of responsibilities and accomplishments",
+        "items": {
+          "type": "string"
+        },
+        "minItems": 1
+      }
+    }
+  }
+}

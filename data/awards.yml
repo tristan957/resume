@@ -2,6 +2,8 @@
 #
 # SPDX-FileCopyrightText: 2023 Tristan Partin <tristan@partin.io>
 
+# yaml-language-server: $schema=../schemas/awards.json
+
 - name: Techniques to Balance LSMs
   type: patent
   organization:

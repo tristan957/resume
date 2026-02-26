@@ -24,6 +24,7 @@
   ),
   linkedin-in: (
     path: "fonts/fontawesome/svgs/brands/linkedin-in.svg",
+    baseline: 0.1em,
   ),
   location-dot: (
     path: "fonts/fontawesome/svgs/solid/location-dot.svg",

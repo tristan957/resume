@@ -84,10 +84,10 @@
             }
           },
           "end": {
-            "type": "object",
+            "type": ["object", "null"],
             "required": ["month", "year"],
             "additionalProperties": false,
-            "description": "End of the employment period",
+            "description": "End of the employment period (null indicates current/ongoing employment)",
             "properties": {
               "month": {
                 "type": "string",

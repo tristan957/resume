@@ -4,32 +4,35 @@
 
 # yaml-language-server: $schema=../schemas/projects.json
 
+- name: Ghostty
+  url: https://ghostty.org
+  icon: ghost
+  descriptors:
+    - >
+      Ghostty is a fast, feature-rich, and cross-platform terminal emulator that
+      uses platform-native UI and GPU acceleration
+    - >
+      Part of the GTK maintainer team which facilitates delivering Ghostty on
+      Linux
+
 - name: Heterogeneous-Memory Storage Engine
   url: https://github.com/hse-project/hse
+  icon: github
   descriptors:
     - >
       A fast embeddable key-value store designed for SSDs and persistent memory,
       optimizing performance and endurance by orchestrating data placement
       across DRAM and multiple classes of solid-state storage
-    - >
-      Overcomes HDD-based architectures to improve throughput up to 6 times,
-      latency up to 11 times and SSD endurance by 7 times when compared to
-      Meta's RocksDB
-
-- name: HSE Python Bindings
-  url: https://github.com/hse-project/hse-python
-  descriptors:
-    - >
-      Python language bindings for the HSE C API
-
-- name: HSE Java Bindings
-  url: https://github.com/hse-project/hse-java
-  descriptors:
-    - >
-      Java language bindings for the HSE C API
 
 - name: Various Open-Source Contributions
   descriptors:
     - >
-      Includes organizations and technologies like Meson, GNOME, Electron,
-      Terraform, etc.
+      Authored over 100 commits to the Meson build system
+    - >
+      Contributed code to various projects within the GNOME community
+    - >
+      Added initial native file chooser support to Electron using the XDG
+      Desktop Portal
+    - >
+      Participating in aerc (email client) development to facilitate
+      contributing to Postgres

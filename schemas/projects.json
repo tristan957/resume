@@ -18,6 +18,10 @@
         "format": "uri",
         "description": "URL of the project's repository or website"
       },
+      "icon": {
+        "type": "string",
+        "description": "FontAwesome icon name for the project"
+      },
       "descriptors": {
         "type": "array",
         "description": "Bullet-point descriptions of the project",

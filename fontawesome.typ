@@ -13,8 +13,13 @@
   file: (
     path: "fonts/fontawesome/svgs/solid/file.svg",
   ),
+  ghost: (
+    path: "fonts/fontawesome/svgs/solid/ghost.svg",
+    baseline: 0.05em,
+  ),
   github: (
     path: "fonts/fontawesome/svgs/brands/github.svg",
+    baseline: 0.05em,
   ),
   graduation-cap: (
     path: "fonts/fontawesome/svgs/solid/graduation-cap.svg",

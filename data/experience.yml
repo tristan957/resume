@@ -6,8 +6,8 @@
 
 - title: Software Engineer
   company:
-    name: Neon
-    url: https://neon.com
+    name: Databricks (formerly Neon)
+    url: https://www.databricks.com
   style: remote
   location:
     city: Austin
@@ -17,25 +17,36 @@
     start:
       month: May
       year: 2023
-    end:
-      month: June
-      year: 2025
+    end: null
   descriptors:
     - >
-      Participating in upstream Postgres development through patch submissions,
-      code reviews, and design discussions on the mailing list
+      Engaging with the Postgres community through conference attendance,
+      volunteering, code submissions and reviews, and mailing list discussions
     - >
-      Communicating with customers and partners to enable extensions and
-      Postgres features on the Neon platform
+      Communicating with customers and field engineers to root cause issues and
+      deliver bug fixes and features to meet their needs
     - >
-      Improving observability within compute components to understand
-      performance and usage characteristics
+      Collaborated with ParadeDB to deliver a full-text search experience on
+      Neon to thousands of customers
     - >
-      Implmenting authorized communication between the control plane and
-      computes to assist in platform security
+      Took over maintaining the HIPAA implementation in Neon and participated in
+      design discussions and code review for the adding HIPAA support to
+      Lakebase
     - >
-      Responding to and root-causing incidents and support escalations as a part
-      of the on-call rotation
+      Implemented TLS support and token rotation within Postgres computes to
+      improve security and meet engineering standards
+    - >
+      Led the compute codebase merge between open source Neon and the internal
+      Databricks fork
+    - >
+      Increasing observability within compute components by adding metrics and
+      alerts to understand performance and usage characteristics
+    - >
+      Responding to and root-causing incidents and engineering escalations as a
+      part of the on-call rotation
+    - >
+      Writing internal documentation to assist in resolving incidents and
+      disseminating information
 
 - title: Staff Software Engineer
   company:

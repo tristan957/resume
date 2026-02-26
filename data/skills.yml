@@ -10,9 +10,10 @@
 - name: Go
 - name: Python
 - name: Java
+- name: Zig
+- name: Postgres
 - name: Linux
 - name: Git
 - name: Build Systems
 - name: Databases
 - name: Storage Engines
-- name: Systems Software

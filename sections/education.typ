@@ -3,7 +3,7 @@
  * SPDX-FileCopyrightText: 2023 Tristan Partin <tristan@partin.io>
  */
 
-#import "../fontawesome.typ" as fa
+#import "../icon.typ"
 #import "../style.typ"
 #import "common.typ": section, subtitle, title
 
@@ -20,10 +20,10 @@
     #stack(
       dir: ltr,
       spacing: 1fr,
-      fa.attach("graduation-cap")[
+      icon.attach("graduation-cap")[
         #e.graduation-date.month #e.graduation-date.year
       ],
-      fa.attach("location-dot")[
+      icon.attach("location-dot")[
         #e.school.location.city, #e.school.location.state
       ],
     )

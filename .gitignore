@@ -2,6 +2,10 @@
 #
 # SPDX-FileCopyrightText: 2023 Tristan Partin <tristan@partin.io>
 
-/fonts/
-/node_modules/
-/Tristan_Partin_Resume.pdf
+# Devenv
+.devenv*
+devenv.local.nix
+devenv.local.yaml
+
+# pre-commit
+.pre-commit-config.yaml

@@ -4,7 +4,7 @@
  */
 
 #import "common.typ": section, separator, title
-#import "../fontawesome.typ" as fa
+#import "../icon.typ"
 #import "../style.typ"
 
 #let data = yaml("../data/awards.yml")
@@ -17,10 +17,10 @@
       stack(
         dir: ltr,
         spacing: 1fr,
-        fa.attach("file")[
+        icon.attach("file")[
           #style.accent(link(a.organization.url, a.organization.name))
         ],
-        fa.attach("hashtag")[#link(a.patent.url, a.patent.number)],
+        icon.attach("hashtag")[#link(a.patent.url, a.patent.number)],
       ),
     )
   } else {
@@ -30,10 +30,10 @@
       stack(
         dir: ltr,
         spacing: 1fr,
-        fa.attach("trophy")[
+        icon.attach("trophy")[
           #style.accent(link(a.organization.url, a.organization.name))
         ],
-        fa.attach("calendar")[#a.year],
+        icon.attach("calendar")[#a.year],
       ),
     )
   }

@@ -3,7 +3,7 @@
  * SPDX-FileCopyrightText: 2023 Tristan Partin <tristan@partin.io>
  */
 
-#import "../fontawesome.typ" as fa
+#import "../icon.typ"
 #import "../style.typ"
 #import "common.typ": section, separator, subtitle, title
 
@@ -15,7 +15,7 @@
   content.push(title(p.name))
 
   if p.at("url", default: none) != none {
-    content.push(fa.attach(p.icon)[
+    content.push(icon.attach(p.icon)[
       #style.accent(link(p.url, p.url.trim(regex("(https|http)://"))))
     ])
   }

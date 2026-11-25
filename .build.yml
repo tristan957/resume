@@ -2,40 +2,14 @@
 #
 # SPDX-FileCopyrightText: 2023 Tristan Partin <tristan@partin.io>
 
-image: alpine/edge
+image: nixos/unstable
+environment:
+  NIX_CONFIG: "experimental-features = nix-command flakes"
 packages:
-  - curl
-  - make
-  - reuse
-  - shellcheck
-  - shfmt
-  - typst
-  - typstyle
-  - yarn
+  - nixos.devenv
 sources:
   - https://git.sr.ht/~tristan957/resume
 tasks:
-  - reuse: |
+  - check: |
       cd resume
-      reuse lint
-  - shellcheck: |
-      cd resume
-      ./scripts/shellcheck.sh
-  - shfmt: |
-      cd resume
-      ./scripts/shfmt.sh
-  - typststyle: |
-      cd resume
-      typstyle --diff .
-  - yarn: |
-      cd resume
-      yarn
-  - markdownlint: |
-      cd resume
-      yarn run markdownlint:check
-  - prettier: |
-      cd resume
-      yarn run prettier:check
-  - build: |
-      cd resume
-      make
+      devenv test

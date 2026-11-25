@@ -3,12 +3,12 @@
  * SPDX-FileCopyrightText: 2023 Tristan Partin <tristan@partin.io>
  */
 
-#import "../fontawesome.typ" as fa
+#import "../icon.typ"
 #import "../style.typ"
 
 #let data = yaml("../data/attributes.yml")
 
-#let attribute(a) = fa.attach(a.fa-name)[
+#let attribute(a) = icon.attach(a.fa-name)[
   #if a.at("uri", default: none) != none [
     #link(a.uri, text(size: style.SMALL_TEXT_SIZE, a.content))
   ] else [

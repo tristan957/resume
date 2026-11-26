@@ -109,6 +109,7 @@
       Co-authored a patent for a log structured merge tree implementation
 
 - title: Software Developer
+  hidden: true
   company:
     name: Expero
     url: https://www.experoinc.com

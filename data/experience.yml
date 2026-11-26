@@ -4,6 +4,29 @@
 
 # yaml-language-server: $schema=../schemas/experience.json
 
+- title: Software Development Engineer
+  company:
+    name: Amazon Web Services
+    url: https://aws.amazon.com
+  style: remote
+  location:
+    city: Austin
+    state: Texas
+    country: USA
+  timeline:
+    start:
+      month: March
+      year: 2026
+    end: null
+  descriptors:
+    - >
+      Participating in upstream Postgres development through code contributions,
+      reviews, bug reporting, performance improvements, and discussions
+    - >
+      Organizing various Postgres conferences including Postgres Summit US,
+      PgDay Boston, and PGConf.dev
+    - >
+      Soliciting sponsorships for Postgres Summit US and PgDay Boston
 - title: Software Engineer
   company:
     name: Databricks (formerly Neon)
@@ -17,7 +40,9 @@
     start:
       month: May
       year: 2023
-    end: null
+    end:
+      month: March
+      year: 2026
   descriptors:
     - >
       Engaging with the Postgres community through conference attendance,

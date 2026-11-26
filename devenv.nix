@@ -82,6 +82,7 @@ in {
           fileset = lib.fileset.unions [
             ./data
             ./icon.typ
+            ./LICENSES/CC-BY-SA-4.0.txt
             ./resume.typ
             ./style.typ
             ./sections
@@ -89,6 +90,8 @@ in {
         };
 
         nativeBuildInputs = [typst];
+
+        meta.license = lib.licenses.cc-by-sa-40;
 
         env.TYPST_FONT_PATHS = fonts;
 

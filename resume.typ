@@ -19,6 +19,13 @@
   keywords: doc.keywords,
 )
 
+#pdf.attach(
+  "LICENSES/CC-BY-SA-4.0.txt",
+  relationship: "supplement",
+  mime-type: "text/plain",
+  description: "Text of the CC BY-SA 4.0 license",
+)
+
 #set page(
   /* A4 generally works better since it gives me more vertical space to work
    * with but alas, the world is 8.5in x 11in.

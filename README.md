@@ -30,17 +30,11 @@ already configured, so `typst compile resume.typ` works directly.
 
 ## Previewing
 
-To preview the PDF in a browser, start the web server in the background:
+To rebuild the PDF on every save, start the watcher:
 
 ```shell
-devenv up -d
+devenv up
 ```
 
-The resume is then available at <http://localhost:7777/resume.pdf>. Stop the
-server with `devenv processes down`.
-
-To use a different port, create a `devenv.local.nix` (ignored by git):
-
-```nix
-{resume.port = 8080;}
-```
+The PDF is written to `$DEVENV_STATE/preview/resume.pdf` (the `file://` path is
+printed on startup).

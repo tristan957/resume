@@ -17,15 +17,9 @@ in {
         default = true;
         description = ''
           Whether to configure the development environment: tools, git hooks,
-          formatters, and the preview server. Disable to only consume
+          formatters, and the preview watcher. Disable to only consume
           `outputs.resume`.
         '';
-      };
-
-      options.resume.port = lib.mkOption {
-        type = lib.types.port;
-        default = 7777;
-        description = "Port the preview web server listens on.";
       };
     }
   ];
@@ -69,22 +63,12 @@ in {
         };
       };
 
-      services.caddy = {
-        enable = true;
-        virtualHosts."http://localhost:${toString config.resume.port}".extraConfig =
-          # caddyfile
-          ''
-            root * ${config.outputs.resume}
-            file_server browse
-          '';
-      };
-
-      enterTest =
+      processes.typst-watch.exec =
         # bash
         ''
-          wait_for_port ${toString config.resume.port}
-          type="$(curl -fsS -o /dev/null -w '%{content_type}' 'http://localhost:${toString config.resume.port}/resume.pdf')"
-          [ "$type" = application/pdf ]
+          mkdir -p "${config.devenv.state}/preview"
+          echo "Preview: file://${config.devenv.state}/preview/resume.pdf"
+          exec typst watch resume.typ "${config.devenv.state}/preview/resume.pdf"
         '';
     })
 
